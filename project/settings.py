@@ -6,15 +6,15 @@ load_dotenv()
 from environs import Env
 
 env = Env()
-# Read .env into os.environ
 env.read_env()
 
 DEBUG = env.bool("DEBUG")
-#----secret-----------------------------------
+
 DATABASES = {}
+
 DATABASES['default'] = eval(os.getenv("DATABASES"))
+
 SECRET_KEY = os.getenv("SECRET_KEY")
-#-----public-----------------------------------------
 
 INSTALLED_APPS = ['datacenter']
 
