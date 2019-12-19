@@ -1,4 +1,4 @@
 .env
-/project/__pycache__
-/datacenter/__pycache__
-/datacenter/migrations/__pycache__
+/project/__pycache__/
+/datacenter/__pycache__/
+/datacenter/migrations/__pycache__/
