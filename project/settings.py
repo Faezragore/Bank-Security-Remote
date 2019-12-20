@@ -10,12 +10,7 @@ env.read_env()
 
 DEBUG = env.bool("DEBUG")
 
-#DATABASES = {}
-
-#DATABASES['default'] = eval(os.getenv("DATABASES"))
-
 DATABASES = {'default': dj_database_url.config(default=os.environ['DATABASE_URL'])}
-
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 
@@ -24,13 +19,6 @@ INSTALLED_APPS = ['datacenter']
 ROOT_URLCONF = "project.urls"
 
 ALLOWED_HOSTS = ['*']
-
-
-#print(DEBUG)
-
-#print(SECRET_KEY)
-
-#print(DATABASES)
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES = [
