@@ -20,7 +20,8 @@ pip install -r requirements.txt
 создайте в корневой папке репозитория файл .env
 
 Подставьте полученные данные в файл .env:
-переменная *DATABASE_URL*: данные для подключения к БД.
+
+переменная *DATABASE_URL*: данные для подключения к БД(host,port,user,password).
 
 переменная *DEBUG*: укажите "false".
 
