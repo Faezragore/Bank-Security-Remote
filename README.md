@@ -15,7 +15,7 @@ pip install -r requirements.txt
 * host.
 * port.
 * dbname.
-* user,password.
+* user/password.
 
 * SECRET_KEY(подсказка ниже).
 * DEBUG(подсказка ниже).
@@ -34,6 +34,7 @@ Cоздайте в репозитории файл __.env__ и подставь�
 
     Воспользуйстесь *secret_key_test.py* для создания такого числа.
 
+Пример файла __.env__
 ```
 DATABASE_URL='postgres://user:password@host:port/dbname'
 SECRET_KEY='REPLACE_ME'
